@@ -9,7 +9,7 @@ function createHeader() {
   const menu = document.createElement("li");
   const contact = document.createElement("li");
 
-  title.textContent = "Title Placeholder";
+  title.textContent = "Coffee";
   home.textContent = "Home";
   menu.textContent = "Menu";
   contact.textContent = "Contact";
