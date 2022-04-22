@@ -1,1 +1,1 @@
-console.log("test works");
+(()=>{"use strict";!function(){const e=document.querySelector("#content"),t=document.createElement("header"),n=document.createElement("nav"),c=document.createElement("h1"),o=document.createElement("ul"),l=document.createElement("li"),d=document.createElement("li"),m=document.createElement("li");c.textContent="Title Placeholder",l.textContent="Home",d.textContent="Menu",m.textContent="Contact",o.append(l,d,m),n.append(c,o),t.appendChild(n),e.appendChild(t)}()})();

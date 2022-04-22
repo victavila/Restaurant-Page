@@ -1,1 +1,3 @@
-console.log("test works");
+import createHomePage from "./home";
+
+createHomePage();
