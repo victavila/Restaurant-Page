@@ -8,6 +8,8 @@ function createHomePage() {
 
   container.classList.add("container");
   title.classList.add("title");
+  text.classList.add("text");
+  menuBtn.classList.add("menu-btn");
 
   title.textContent = "Comfy Coffee";
   text.textContent = "Some slogan or info";
