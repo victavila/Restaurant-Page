@@ -3,15 +3,59 @@
   margin: 0;
 }
 
+:root {
+  --main-bg-color: rgb(0, 0, 0, 0.5);
+  --title-font: "Playball", cursive;
+  --main-font: "Abel", sans-serif;
+  --menu-font: "Shadows Into Light", cursive;
+}
+
 html {
   background: url("./images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-size: 100%;
 }
 
 header {
-  background-color: blue;
-  color: red;
+  background-color: var(--main-bg-color);
+  color: white;
+  font-family: var(--main-font);
+}
+
+li {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: var(--main-bg-color);
+  margin-top: 40px;
+  width: 40%;
+  margin: auto;
+  font-family: var(--main-font);
+  margin-top: 50px;
+}
+
+.title {
+  font-family: var(--title-font), Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 100px;
+  color: white;
+  font-family: var(--menu-font), Arial, Helvetica, sans-serif;
+}
+
+.coffee-img {
+  width: 250px;
+  height: auto;
 }

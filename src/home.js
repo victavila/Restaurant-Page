@@ -1,11 +1,20 @@
-import createHeader from "./header";
-
 function createHomePage() {
-  createHeader();
-
   const content = document.querySelector("#content");
 
-  const div = document.createElement("div");
+  const container = document.createElement("div");
+  const title = document.createElement("h1");
+  const text = document.createElement("p");
+  const menuBtn = document.createElement("button");
+
+  container.classList.add("container");
+  title.classList.add("title");
+
+  title.textContent = "Comfy Coffee";
+  text.textContent = "Some slogan or info";
+  menuBtn.textContent = "Menu";
+
+  container.append(title, text, menuBtn);
+  content.appendChild(container);
 }
 
 export default createHomePage;
