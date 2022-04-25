@@ -10,8 +10,17 @@ const content = document.querySelector("#content");
 const homeLink = document.querySelector(".home");
 const menuLink = document.querySelector(".menu");
 const contactLink = document.querySelector(".contact");
+const menuBtn = document.querySelector(".menu-btn");
 
 homeLink.classList.add("active");
+
+menuBtn.addEventListener("click", () => {
+  removeChildNodes(content);
+  createMenuPage();
+  homeLink.classList.remove("active");
+  contactLink.classList.remove("active");
+  menuLink.classList.add("active");
+});
 
 function removeChildNodes(parent) {
   while (parent.childNodes.length > 1) {
@@ -22,6 +31,14 @@ function removeChildNodes(parent) {
 homeLink.addEventListener("click", () => {
   removeChildNodes(content);
   createHomePage();
+  const menuBtn = document.querySelector(".menu-btn");
+  menuBtn.addEventListener("click", () => {
+    removeChildNodes(content);
+    createMenuPage();
+    homeLink.classList.remove("active");
+    contactLink.classList.remove("active");
+    menuLink.classList.add("active");
+  });
   menuLink.classList.remove("active");
   contactLink.classList.remove("active");
   homeLink.classList.add("active");
